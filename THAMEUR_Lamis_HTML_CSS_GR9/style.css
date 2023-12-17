@@ -1,0 +1,619 @@
+body {
+  background-image: url(images/fnaf\ 4\ background.jpeg);
+  font-family: "Arial", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection{
+  background-color: rgba(255, 0, 0, 0.549);
+  color:rgb(255, 255, 255);
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+
+
+
+.content {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  
+  
+  
+}
+
+/* côté gauche */
+.leftbar {
+  min-width: calc(100% / 5);
+  max-width: calc(100% / 5);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+
+
+.bloc-S {
+  display: flex;
+  justify-content: center; 
+  flex: 1;
+  flex-direction: column;
+  background-color: #000000bc;
+  border-radius: 8px;
+  padding: 14px 24px;
+}
+
+
+
+.summary {
+  background-color: #2b020248;
+  border-radius: 8px;
+  padding: 14px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  
+  .summary h2 {
+    font-size: 37px; 
+    color:rgb(237, 237, 237);
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+    margin-top: 10px;
+    margin-bottom: 40px; 
+  }
+  
+  .summary p {
+    font-size: 25px; 
+    margin: 4px; 
+    color:rgb(249, 197, 197);
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+    margin-bottom: 10px;
+  }
+
+  .summary a{
+  text-decoration: none; 
+  color: #ffffff; 
+  text-shadow: 2px 2px 4px rgba(249, 56, 56, 0.5);
+  }
+
+  .summary a:visited {
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+  }
+  
+  .summary a:hover {
+    color: #f49090; 
+    text-shadow: 2px 2px 4px rgba(245, 152, 152, 0.5); 
+  }
+  
+
+
+
+
+
+  /*----------main-----------*/
+
+
+
+.main {
+  display: flex;
+  border-radius: 8px;
+  background-color: #000000bc;
+  flex: 1;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-left: 10px; 
+  margin-right: 10px; 
+  
+  
+}
+
+
+  
+  .bloc-T {
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    justify-content: center;  
+    gap: 10px;
+    background-color: #2000004c;
+    opacity:1;
+    border-radius: 8px;
+    padding: 20px 30px;
+    margin-top: 10px;
+    margin: 15px 10px 20px 10px;
+  }
+
+  .titre {
+    color: rgba(196, 162, 162, 0.929); 
+    font-size: 40px;
+    position: relative;
+    display: flex;
+    transition: color 0.3s ease; 
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5); 
+  }
+  
+  .titre:hover {
+    color: rgb(255, 255, 255); 
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5); 
+  }
+  
+  .texte h2{
+    color:rgb(237, 237, 237);
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+    display: flex;
+    font-size: 40px;
+    font-family: Helvetica, sans-serif;
+    margin: 30px 40px 20px 40px;
+
+  }
+
+  .texte p{
+    display: flex;
+    color:rgb(249, 197, 197);
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+    font-size: 20px;
+    margin: 15px 40px 50px/*bas*/ 40px;
+    text-align: justify;
+    line-height: 23px;
+    
+
+  }
+
+  /*les deux commentaires de scott*/
+  .suite {
+      display: flex;
+     background-color: #00000000;
+     opacity: 1;
+     border-radius: 8px;
+     padding: 14px 24px;
+     align-items: center;
+     justify-content: space-between; 
+  }
+
+  .suite-images {
+    flex: 1; 
+    max-width: 47.3%; 
+    margin-left: 40px; 
+  }
+  
+  .suite-images:last-child {
+    max-width: 32%; 
+    margin-right: 50px; 
+  }
+  
+  .suite img {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    opacity:0.8;
+  }
+
+/*--------------------*/
+
+
+  .suite2 {
+  
+    width: calc(100%);
+    margin-left: 41px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 60px;
+  }
+  
+  .suite2 img {
+    width: 90%;
+    height: auto;
+    border-radius: 8px;
+    opacity:0.8;
+    
+  }
+
+  .image-bonnie {
+    width: 100%;
+    margin: 10px; 
+    text-align: center; 
+    margin-bottom: 40px; 
+    position: relative;
+  }
+  
+  .image-bonnie img {
+    max-width: 70%; 
+    height: auto; 
+    border-radius: 8px;
+  }
+  
+  .image-bonnie p {
+    text-align: center; 
+    margin: 10px ; 
+    color: #ffffff; 
+    font-size: 23px;
+    
+  }
+
+
+  /*boutton*/
+
+  .button {
+    display: flex;
+    padding: 15px 20px;
+    background-color: #270000; 
+    color:rgb(219, 215, 240);
+    text-shadow: 2px 2px 4px rgba(21, 14, 42, 0.5); 
+    transition: color 0.3s ease;
+    border: none;
+    border-radius: 45px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 35px;
+    cursor: pointer;
+    margin: 80px 300px 30px;
+    
+
+    
+  }
+  
+  .button:hover {
+    background-color: #211a44f9; 
+  }
+
+
+
+/* côté droit */
+.rightbar {
+  min-width: calc(100% / 5);
+  max-width: calc(100% / 5);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+
+.bloc-P {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #000000bc;
+  border-radius: 8px;
+  padding: 14px 24px;
+}
+
+.othercontent {
+  background-color: #2b020248;
+  border-radius: 8px;
+  padding: 14px 24px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: right;
+}
+
+.othercontent h2 {
+  color:rgb(237, 237, 237);
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+  font-size: 30px; 
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 37px;
+}
+
+.othercontent p {
+  color:rgb(249, 197, 197);
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+  font-size: 21px; 
+  margin: 19px; 
+  padding-left: 20px; 
+  background-size: 40px; 
+  background-repeat: no-repeat; 
+  background-position: left center; 
+  margin-bottom: 10px;
+}
+
+.othercontent a {
+  text-decoration: none; 
+  color: #ffffff; 
+  text-shadow: 2px 2px 4px rgba(249, 56, 56, 0.5); 
+}
+
+.othercontent a:visited {
+  color: #ffffff; 
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+}
+
+.othercontent a:hover {
+  color: #f49090; 
+  text-shadow: 2px 2px 4px rgba(245, 152, 152, 0.5); 
+}
+
+
+
+.othercontent .image1 {
+  background-image: url('images/ucn.jpeg'); 
+  
+  
+}
+.othercontent .image2 {
+  background-image: url('images/springtrap.png'); 
+  
+  
+}
+
+.othercontent .image3 {
+  background-image: url('images/scott\ pp.jpg'); 
+  
+  
+}
+
+.othercontent .image4 {
+  background-image: url('images/mr\ hippo.png'); 
+  
+  
+}
+
+.othercontent .image5 {
+  background-image: url('images/Dee\ Dee.jpg'); 
+  
+  
+}
+
+
+/*page 2 et 3*/
+
+.image-group {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+}
+
+
+.image-group img {
+  width: 70%; 
+  max-width: 100%; 
+  border-radius: 8px; 
+  
+}
+
+.image-group p{
+  text-align: center;
+  justify-content:center ;
+  color: #ffffff;
+  font-size: 20px;
+
+}
+
+.box {
+  display: flex;
+  gap: 20px; 
+}
+
+.text-box {
+  flex: 1; 
+}
+
+.image-box {
+  max-width: 35%; 
+}
+
+.image-box img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+}
+
+  .image-box figcaption {
+  text-align:center;
+  
+}
+
+.image-box figcaption p {
+  font-size: 22px; 
+  color: #ffffff; 
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: -100px;
+
+}
+
+figure {
+  
+  display: flex;
+  flex-flow: column;
+}
+
+figcaption {
+  
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top:12px;
+  margin-right:100px;
+  text-align: center;
+  font-size: 20px;
+}
+
+
+/*éléments invisibles avant 1500px*/
+
+.hiddensummary{
+
+  display:none;
+}
+
+.hiddenothercontent{
+
+  display:none;
+
+}
+
+
+
+/*responsive*/
+
+
+@media all and (max-width: 1500px) {
+  .leftbar {
+      display: none;
+  }
+
+  .rightbar {
+      display: none;
+  }
+
+  .main {
+      padding-top: 20px; /* Espace pour le summary */
+  }
+
+
+.hiddensummary{
+  display:flex;
+  background-color: #2b020248;
+  border-radius: 8px;
+  padding: 14px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hiddensummary p {
+  font-size: 30px; 
+  margin: 4px; 
+  color:rgb(249, 197, 197);
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+.hiddensummary h2 {
+  font-size: 44px; 
+  color:rgb(237, 237, 237);
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+  margin-top: 10px;
+  margin-bottom: 40px; 
+}
+
+
+.hiddensummary a{
+text-decoration: none; 
+color: #ffffff; 
+text-shadow: 2px 2px 4px rgba(249, 56, 56, 0.5);
+}
+
+.hiddensummary a:visited {
+  color: #ffffff; 
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+}
+
+.hiddensummary a:hover {
+  color: #f49090; 
+  text-shadow: 2px 2px 4px rgba(245, 152, 152, 0.5); 
+}
+
+
+.hiddenothercontent {
+  background-color: #2b020248;
+  border-radius: 8px;
+  padding: 14px 24px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+}
+
+.hiddenothercontent h2 {
+  color:rgb(237, 237, 237);
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+  font-size: 50px; 
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 37px;
+}
+
+.hiddenothercontent p {
+  color:rgb(249, 197, 197);
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+  font-size: 30px; 
+  margin: 19px; 
+  padding-left: 60px; 
+  background-size: 40px; 
+  background-repeat: no-repeat; 
+  background-position: left center; 
+  margin-bottom: 10px;
+}
+
+.hiddenothercontent a {
+  text-decoration: none; 
+  color: #ffffff; 
+  text-shadow: 2px 2px 4px rgba(249, 56, 56, 0.5); 
+}
+
+.hiddenothercontent a:visited {
+  color: #ffffff; 
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+}
+
+.hiddenothercontent a:hover {
+  color: #f49090; 
+  text-shadow: 2px 2px 4px rgba(245, 152, 152, 0.5); 
+}
+
+
+
+.hiddenothercontent .image1 {
+  background-image: url('images/ucn.jpeg'); 
+  
+  
+}
+.hiddenothercontent .image2 {
+  background-image: url('images/springtrap.png'); 
+  
+  
+}
+
+.hiddenothercontent .image3 {
+  background-image: url('images/scott\ pp.jpg'); 
+  
+  
+}
+
+.hiddenothercontent .image4 {
+  background-image: url('images/mr\ hippo.png'); 
+  
+  
+}
+
+.hiddenothercontent .image5 {
+  background-image: url('images/Dee\ Dee.jpg'); 
+  
+  
+}
+
+
+
+}
+
